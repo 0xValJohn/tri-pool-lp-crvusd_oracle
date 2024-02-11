@@ -1,6 +1,9 @@
 # tri-pool-lp-crvusd-oracle
 A proposed price feed for tri-curve lp/crvUSD for isolated lending markets.
 
+## Context
+![image](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/assets/98047648/a5d0628d-2f0b-4a27-b5b8-15ba724d7042)
+
 ## Proposed Oracles Calculation:
 
 Use Curve pool `lp_price` (current price of the LP token w.r.t coin at the 0th index) in combination with ChainLink pricefeeds:
