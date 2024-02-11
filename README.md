@@ -3,7 +3,7 @@ A proposed price feed for tri-curve lp/crvUSD for isolated lending markets.
 
 ## Proposed Oracles Calculation:
 
-Use Curve pool `lp_price` (current price of the LP token w.r.t coin at the 0th index) in combinaison with ChainLink procefeeds:
+Use Curve pool `lp_price` (current price of the LP token w.r.t coin at the 0th index) in combination with ChainLink pricefeeds:
 
 | Collateral     | Loan Asset                               | Pool Index 0 | Proposed Oracle                               |
 |----------------|--------|-----|--------------------------------------------|
@@ -29,7 +29,28 @@ _Asset price calculated from ChainLink feeds, with BTC/USD used for WBTC and TBT
 
 ## Results
 
-### Variance Graphs
+### Dataset
+https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/dataset.csv
 
-### MAX, MEAN, MEDIAN, PERCENTILE
+### Summary
+![summary](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/stats.png)
 
+#### TricryptoUSDT
+![TricryptoUSDT](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/USDT_Oracle_vs_Ref.png)
+![TricryptoUSDT](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/USDT_Oracle_vs_Ref_Over_Time.png)
+
+#### TricryptoUSDC
+![TricryptoUSDC](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/USDC_Oracle_vs_Ref.png)
+![TricryptoUSDC](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/USDC_Oracle_vs_Ref_Over_Time.png)
+
+#### TricryptoLLAMA
+![TricryptoLLAMA](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/LLAMA_Oracle_vs_Ref.png)
+![TricryptoLLAMA](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/LLAMA_Oracle_vs_Ref_Over_Time.png)
+
+#### TricryptoLSD
+![TricryptoLSD](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/LSD_Oracle_vs_Ref.png)
+![TricryptoLSD](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/LSD_Oracle_vs_Ref_Over_Time.png)
+
+#### TricryptoCRV
+![TricryptoCRV](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/CRV_Oracle_vs_Ref.png)
+![TricryptoCRV](https://github.com/0xValJohn/tri-pool-lp-crvusd-oracle/blob/main/images/CRV_Oracle_vs_Ref_Over_Time.png)
